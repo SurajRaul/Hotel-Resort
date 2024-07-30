@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+<body>
+    <div class="forms-wrapper">
+        <form id="signInForm" action="#" method="post" novalidate>
+            <div class="container">
+                <h1>Sign In</h1>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" id="uname" name="uname" placeholder="Enter Username" required>
+                <div class="error-container" id="uname-error"></div>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw" name="psw" placeholder="Enter Password" required>
+                <div class="error-container" id="psw-error"></div>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" name="remember" checked="checked"> Remember me
+                </label>
+            </div>
+        </form>
+
+        <form id="signUpForm" action="#" method="post" novalidate>
+            <div class="container">
+                <h1>Sign Up</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                <div class="error-container" id="email-error"></div>
+
+                <label for="psw-signup"><b>Password</b></label>
+                <input type="password" id="psw-signup" name="psw" placeholder="Enter Password" required>
+                <div class="error-container" id="psw-signup-error"></div>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" id="psw-repeat" name="psw-repeat" placeholder="Repeat Password" required>
+                <div class="error-container" id="psw-repeat-error"></div>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./JS/signUp.js"> </script>
+</body>
+</html>
